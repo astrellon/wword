@@ -1,12 +1,12 @@
+package com.wword;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class WTree
-{
+public class WTree {
     public WTreeNode root = new WTreeNode();
 
-    public void match(WWordContext context)
-    {
+    public void match(WWordContext context) {
         ArrayList<WTreeNode.ScoredTreeNode> searchList = new ArrayList<>();
         int maxScore = root.search(context, null, searchList);
         int totalScore = maxScore;

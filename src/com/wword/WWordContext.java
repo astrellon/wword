@@ -1,8 +1,8 @@
-import java.util.ArrayList;
-import java.util.Stack;
+package com.wword;
 
-public class WWordContext
-{
+import java.util.ArrayList;
+
+public class WWordContext {
     public static class ScoredWordMatch implements Comparable<ScoredWordMatch> {
         public final WWord word;
         public final int score;
